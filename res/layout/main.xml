@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/main_layout">
+
+    <com.example.scrollviewsync.ObservableScrollView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:id="@+id/left_scrollview">
+        <com.example.scrollviewsync.Container
+                android:layout_width="match_parent"
+                android:layout_height="100000dp"
+                android:minHeight="100000dp"
+                android:id="@+id/left_container"/>
+
+    </com.example.scrollviewsync.ObservableScrollView>
+
+
+    <com.example.scrollviewsync.ObservableScrollView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/right_scrollview">
+        <com.example.scrollviewsync.Container
+                android:layout_width="match_parent"
+                android:layout_height="100000dp"
+                android:minHeight="100000dp"
+                android:id="@+id/right_container"/>
+    </com.example.scrollviewsync.ObservableScrollView>
+
+</LinearLayout>
+
